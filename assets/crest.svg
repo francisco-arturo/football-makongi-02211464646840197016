@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 232" role="img" aria-label="Makongi FC crest">
+  <defs>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3547"/>
+      <stop offset="1" stop-color="#b10d1c"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="shield">
+      <path d="M100 5 193 34v87c0 58-40 93-93 107C47 214 7 179 7 121V34Z"/>
+    </clipPath>
+  </defs>
+
+  <path d="M100 5 193 34v87c0 58-40 93-93 107C47 214 7 179 7 121V34Z" fill="#0a0a0c"/>
+  <path d="M100 5 193 34v87c0 58-40 93-93 107C47 214 7 179 7 121V34Z" fill="url(#shine)"/>
+  <path d="M100 5 193 34v87c0 58-40 93-93 107C47 214 7 179 7 121V34Z" fill="none" stroke="url(#red)" stroke-width="7"/>
+  <path d="M100 16 183 41v80c0 51-35 82-83 95-48-13-83-44-83-95V41Z" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+
+  <g clip-path="url(#shield)">
+    <path d="M7 34 193 34v14L7 79Z" fill="#d8172a"/>
+    <path d="M7 190 193 156v20L7 216Z" fill="#d8172a" opacity=".92"/>
+    <g opacity=".09" stroke="#fff" stroke-width="1">
+      <path d="M-10 55 175 5M-10 72 190 18M-10 89 190 35M-10 106 190 52M-10 123 190 69"/>
+    </g>
+  </g>
+
+  <text x="100" y="55" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3.4">GREAT MAKONGI</text>
+
+  <g transform="translate(100 92)">
+    <circle r="27" fill="#ffffff"/>
+    <path d="M0-27a27 27 0 0 1 18.6 7.5l-7 12.2A18 18 0 0 0 0-11a18 18 0 0 0-11.6 3.7l-7-12.2A27 27 0 0 1 0-27Z" fill="#0a0a0c"/>
+    <path d="m18.6-19.5 13.3 9.7-4.2 16.3-15.2 1.3-4.5-14.8Z" fill="#0a0a0c"/>
+    <path d="m-18.6-19.5-13.3 9.7 4.2 16.3 15.2 1.3 4.5-14.8Z" fill="#0a0a0c"/>
+    <path d="M0 11 12 20 7 34H-7L-12 20Z" fill="#0a0a0c"/>
+    <path d="M8.7 23.6 27.7 6.5 31.9-9.8 44.8 0" fill="none" stroke="#d8172a" stroke-width="2"/>
+  </g>
+
+  <text x="100" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="1.5">MAKONGI</text>
+  <text x="100" y="151" text-anchor="middle" fill="#ffbac0" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="700" letter-spacing="4.8">FOOTBALL CLUB</text>
+
+  <g transform="translate(100 170)">
+    <path d="M-28 0h56l-4 12h-48Z" fill="#d8172a"/>
+    <text x="0" y="9" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="800" letter-spacing="1.6">EST. 1998</text>
+  </g>
+
+  <text x="100" y="199" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="8.6" font-weight="700" letter-spacing="1.9">THE PRIDE OF</text>
+  <text x="100" y="211" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="8.6" font-weight="700" letter-spacing="1.9">GREAT MAKONGI FC</text>
+</svg>

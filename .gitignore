@@ -1,0 +1,11 @@
+node_modules/
+.vercel/
+out/
+dist/
+screenshots/
+.chrome-profile/
+.edge-profile/
+.testdom/
+*.log
+.DS_Store
+.harness/last-*.json

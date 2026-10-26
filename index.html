@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makongi FC — The Pride of Great Makongi FC</title>
+  <meta name="description" content="The official home of Makongi FC. Squad, lineups, fixtures, results, player statistics, league table, matchday posters and club news.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="assets/crest.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+
+  <div class="topline">
+    <div class="container">
+      <span>Founded 1998 · Makongi Ground · Tanzania</span>
+      <span>The Pride of Great Makongi FC</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/" aria-label="Makongi FC home">
+        <img src="assets/crest.svg" alt="Makongi FC crest">
+        <span class="brand-text">
+          <span class="brand-name">Makongi <em>FC</em></span>
+          <span class="brand-sub">The Pride of Great Makongi</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/squad" data-nav="squad">Squad</a>
+        <a href="#/lineup" data-nav="lineup">Lineup</a>
+        <a href="#/fixtures" data-nav="fixtures">Fixtures</a>
+        <a href="#/stats" data-nav="stats">Stats</a>
+        <a href="#/table" data-nav="table">Table</a>
+        <a href="#/posters" data-nav="posters">Posters</a>
+        <a href="#/news" data-nav="news">News</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="admin-pill" href="#/admin"><span class="dot"></span>Admin</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <div class="container">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/squad" data-nav="squad">Squad</a>
+        <a href="#/lineup" data-nav="lineup">Lineup</a>
+        <a href="#/fixtures" data-nav="fixtures">Fixtures &amp; Results</a>
+        <a href="#/stats" data-nav="stats">Player Stats</a>
+        <a href="#/table" data-nav="table">League Table</a>
+        <a href="#/posters" data-nav="posters">Poster Studio</a>
+        <a href="#/news" data-nav="news">Club News</a>
+        <a href="#/admin" data-nav="admin">Admin Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="news-ticker" aria-label="Club headline">
+    <div class="ticker-label">Latest</div>
+    <div class="ticker-track" id="ticker-track">
+      <span><b>Makongi FC go top</b> after a 3-1 win at KMC</span>
+      <span class="sep">/</span>
+      <span>Next: <b>Simba SC</b> at Makongi Ground, 2 November</span>
+      <span class="sep">/</span>
+      <span><b>Mwakalinga</b> named Player of the Month</span>
+      <span class="sep">/</span>
+      <span>New 2026/27 home kit available now</span>
+    </div>
+  </div>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/crest.svg" alt="">
+          <div>
+            <h3>Makongi FC</h3>
+            <p>The Pride of Great Makongi FC. Built on community, driven by football.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Club</h4>
+          <a href="#/squad">First team</a>
+          <a href="#/lineup">Starting XI</a>
+          <a href="#/news">Club news</a>
+          <a href="#/posters">Poster studio</a>
+        </div>
+        <div class="footer-col">
+          <h4>Matchday</h4>
+          <a href="#/fixtures">Fixtures</a>
+          <a href="#/fixtures">Results</a>
+          <a href="#/table">League table</a>
+          <a href="#/stats">Player stats</a>
+        </div>
+        <div class="footer-col">
+          <h4>Makongi Ground</h4>
+          <p id="footer-address">Makongi Ground, Makongi, Tanzania</p>
+          <p id="footer-email">info@makongifc.com</p>
+          <p id="footer-phone">+255 700 000 000</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footer-year"></span> Makongi FC. All rights reserved.</span>
+        <span>Website prototype · <span class="mfc">The Pride of Great Makongi FC</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+
+  <noscript>
+    <div style="padding:24px;background:#fff3f4;color:#7b101c;font-family:Arial,sans-serif">
+      This prototype needs JavaScript enabled to show the squad, fixtures, posters and admin dashboard.
+    </div>
+  </noscript>
+
+  <script type="module" src="assets/app.mjs"></script>
+</body>
+</html>

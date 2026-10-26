@@ -1,0 +1,11 @@
+dev-server.mjs
+scripts/
+init.ps1
+init.sh
+*.md
+.gitignore
+.vercelignore
+screenshots/
+.chrome-profile/
+.edge-profile/
+.testdom/
