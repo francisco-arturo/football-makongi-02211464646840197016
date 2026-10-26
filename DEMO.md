@@ -1,17 +1,21 @@
 # Demo — Makongi FC (football-club-022114646468401970169)
 
-This is the review build. It runs locally now; the live Vercel URL is added **after** the build is approved and a repository URL is supplied.
+This is the delivered build. The live URL and the repository are both real.
 
-- **Local URL:** [http://127.0.0.1:49671](http://127.0.0.1:49671)
-- **Run:** `node dev-server.mjs` from this directory. If 4173 is busy, the server prints the next free port.
+- **Live URL:** [https://football-club-022114646468401970169.vercel.app](https://football-club-022114646468401970169.vercel.app)
+- **Deployment:** `dpl_5JH79HarAUQL5nJTqmnYjUWrykFw` (READY in 5s)
+- **Repository:** [https://github.com/francisco-arturo/football-makongi-02211464646840197016](https://github.com/francisco-arturo/football-makongi-02211464646840197016)
+- **Run locally:** `node dev-server.mjs` from this directory. If 4173 is busy, the server prints the next free port.
 - **Verification:** `powershell -ExecutionPolicy Bypass -File .\init.ps1` or `node .\scripts\verify.mjs`
-- **Last verified:** 2026-10-26 — 40 checks passed, all 9 public views and 6 admin tabs rendered in the headless smoke test.
+- **Last verified:** 2026-10-26 — 44 local checks passed, live `/` and `/assets/app.mjs` returned 200.
+
+> Repository naming note: the user-supplied repository is `football-makongi-02211464646840197016` (37 characters and a 20-digit tail). The Vercel project uses the canonical 35-character slug so the live host stays clean and matches the prototype: `football-club-022114646468401970169`. The repository can be renamed later without changing the live site.
 
 ## The 60-second path
 
 | # | Do this | What the visitor should see |
 |---|---|---|
-| 1 | Open the local URL | A finished, seeded club home page: crest, slogan, next-match countdown, latest result, league snapshot and news |
+| 1 | Open the live URL | A finished, seeded club home page: crest, slogan, next-match countdown, latest result, league snapshot and news |
 | 2 | Click **Squad**, then a player | 24-player squad with filters, portrait cards and a full player profile modal |
 | 3 | Click **Lineup** and switch 4-3-3 / 4-2-3-1 / 3-5-2 | Formation-aware pitch, starting XI, bench, coach and XI summary |
 | 4 | Click **Posters** | A live 1080 × 1350 matchday poster; change the opponent and download the PNG |
@@ -49,12 +53,12 @@ This is the review build. It runs locally now; the live Vercel URL is added **af
 - Restart the preview with `node dev-server.mjs` and use the port it prints.
 - Re-run `node .\scripts\verify.mjs` to confirm data and route integrity.
 
-## Deployment (after approval)
+## Deployment
 
-From the workspace root:
+Deployed on 2026-10-26 from the canonical project:
 
 ```powershell
 node .harness/deploy.mjs football-club-022114646468401970169
 ```
 
-The deployment URL will be recorded here and sent back with the repository link.
+Live: https://football-club-022114646468401970169.vercel.app

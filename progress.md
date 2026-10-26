@@ -2,13 +2,16 @@
 
 ## Current State
 
-- **Core prototype complete and verified locally** on 2026-10-26.
-- This is the review build: nothing has been pushed, deployed or turned into a proposal.
-- Local preview is running at **http://127.0.0.1:49671** via `node dev-server.mjs`.
+- **Core prototype complete, verified and deployed** on 2026-10-26.
+- **Live:** https://football-club-022114646468401970169.vercel.app (HTTP 200)
+- **Repository:** https://github.com/francisco-arturo/football-makongi-02211464646840197016 (pushed `main`, commit `352f0ff`)
+- **Deployment:** `dpl_5JH79HarAUQL5nJTqmnYjUWrykFw`, READY in 5s
+- Local preview: `node dev-server.mjs` (prints a free port if 4173 is busy).
 - Brand: Makongi FC crest, red/black/white system, Barlow Condensed + Inter, slogan “The Pride of Great Makongi FC.”
 - Stack: static HTML + CSS + native ES modules + canvas. No build step, no dependencies.
 - Seeded data: 24 players, 13 fixtures, 8 results, 10-club table, 6 news articles, 3 formations.
 - Admin: player, fixture/result, news, lineup and club-info management with photo compression and localStorage persistence.
+- Repository naming note: the user-supplied repo is `football-makongi-02211464646840197016` (37 characters, 20-digit tail). The Vercel project uses the canonical 35-character slug `football-club-022114646468401970169` so the live host stays clean.
 
 ## Current Objective
 
@@ -18,8 +21,8 @@ The prototype objective is met. `proto-006` is the honest next step: replace bro
 
 ## Last Updated
 
-- **Last Updated:** 2026-10-26 (review handover)
-- **Recommended Next Step:** review the local build, then (after approval) push and deploy, or start `proto-006` for the production backend.
+- **Last Updated:** 2026-10-26 (delivered and proposal drafted)
+- **Recommended Next Step:** the user reviews the proposal, sends it, then logs the outcome in `upwork-kit/TRACKER.csv`. If the client wants production, start `proto-006`.
 
 ## What Ran
 
@@ -30,7 +33,10 @@ The prototype objective is met. `proto-006` is the honest next step: replace bro
 | `node --check assets\app.mjs` and all modules | No syntax errors |
 | Headless render smoke (`scripts/render-smoke.mjs`) | 9 public views + 6 admin tabs rendered, no `undefined` or `[object Object]` values |
 | HTTP checks | `/`, `/index.html`, CSS, app module and crest all returned 200 |
-| `node dev-server.mjs` | Local preview on `http://127.0.0.1:49671` (auto-selects a free port if 4173 is busy) |
+| `node dev-server.mjs` | Local preview (prints the chosen free port) |
+| `git push -u origin main` | Pushed `352f0ff` to the user-supplied GitHub remote |
+| `node .harness/deploy.mjs football-club-022114646468401970169` | `dpl_5JH79HarAUQL5nJTqmnYjUWrykFw` READY in 5s; live alias `football-club-022114646468401970169.vercel.app` |
+| Live HTTP check with Node `fetch` | `/` 200 text/html, 5,280 bytes, contains "Makongi FC"; `/assets/app.mjs` 200 |
 | Attempted headless Chrome/Edge screenshot | Blocked by the agent sandbox (`OpenProcess: Access is denied`); no screenshot was produced |
 
 ## Verification Evidence
@@ -107,11 +113,13 @@ Verification complete: 44 checks passed.
 
 ## Next
 
-1. Review the local URL and the 60-second path in `DEMO.md`.
-2. On approval: add the GitHub repository URL to `github.json`, push, then `node .harness/deploy.mjs football-club-022114646468401970169`.
+1. The user reviews the proposal in chat and sends it.
+2. Log the sent proposal in `upwork-kit/TRACKER.csv` with the hook type.
 3. If the client wants production: start `proto-006` (database, server auth, cloud photos, automatic table calculation).
+4. Optional cleanup: rename the GitHub repository to the canonical 35-character slug.
 
 ## Blockers
 
-- None for the local review build.
+- None for the delivered build.
+- Repository name is user-supplied and differs from the canonical slug; documented in `DEMO.md` and `github.json`.
 - Automated browser screenshots are unavailable inside the agent sandbox; DOM render smoke tests were used instead.

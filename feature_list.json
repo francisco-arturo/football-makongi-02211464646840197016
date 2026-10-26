@@ -15,7 +15,7 @@
       "description": "Makongi FC visual identity, responsive shell, home page with next-match countdown, latest result, league snapshot, season stats, featured players, news and fixture previews.",
       "status": "done",
       "dependencies": [],
-      "evidence": "2026-10-26: node .\\scripts\\verify.mjs — all 9 public views rendered; HTTP / returned 200. Home renders 36,681 characters in the DOM smoke test.",
+      "evidence": "2026-10-26: node .\\scripts\\verify.mjs — all 9 public views rendered; HTTP / returned 200. Home renders 36,681 characters in the DOM smoke test. Live at https://football-club-022114646468401970169.vercel.app (HTTP 200).",
       "done_criteria": [
         "Brand and responsive shell implemented",
         "Home page uses seeded club data",
