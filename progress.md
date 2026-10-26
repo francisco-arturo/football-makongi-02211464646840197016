@@ -37,6 +37,7 @@ The prototype objective is met. `proto-006` is the honest next step: replace bro
 | `git push -u origin main` | Pushed `352f0ff` to the user-supplied GitHub remote |
 | `node .harness/deploy.mjs football-club-022114646468401970169` | `dpl_5JH79HarAUQL5nJTqmnYjUWrykFw` READY in 5s; live alias `football-club-022114646468401970169.vercel.app` |
 | Live HTTP check with Node `fetch` | `/` 200 text/html, 5,280 bytes, contains "Makongi FC"; `/assets/app.mjs` 200 |
+| `node .harness\gate.mjs` after delivery records | PASSED, 72 prototypes verified, football club **96/100**, root **100/100** |
 | Attempted headless Chrome/Edge screenshot | Blocked by the agent sandbox (`OpenProcess: Access is denied`); no screenshot was produced |
 
 ## Verification Evidence
